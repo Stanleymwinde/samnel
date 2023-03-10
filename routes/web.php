@@ -21,3 +21,6 @@ use App\Http\Controllers\UserController;
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/about', [UserController::class, 'about'])->name('about');
 Route::get('/contact', [UserController::class, 'contact'])->name('contact');
+Route::get('/general', [UserController::class, 'general'])->name('general');
+Route::get('/life', [UserController::class, 'life'])->name('life');
+Route::get('/health', [UserController::class, 'health'])->name('health');

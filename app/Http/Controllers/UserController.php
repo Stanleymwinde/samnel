@@ -18,4 +18,17 @@ class UserController extends Controller
     {
         return view('user.contact');
     }
+    public function general()
+    {
+        return view('categories.general');
+    }
+    public function health()
+    {
+        return view('categories.health');
+    }
+
+    public function life()
+    {
+        return view('categories.life');
+    }
 }
