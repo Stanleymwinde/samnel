@@ -7,7 +7,7 @@
 
                     <a href="/" class="img-fluid me-3">
                         <h1 class="m-0">
-                            <img class="img-fluid me-3" src="img/samnelat30Logo-removebg-preview.png" alt="" />
+                            <img class="img-fluid me-3" src="/img/samnelat30Logo-removebg-preview.png" alt="" />
                         </h1>
                     </a>
 

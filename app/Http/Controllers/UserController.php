@@ -31,4 +31,13 @@ class UserController extends Controller
     {
         return view('categories.life');
     }
+
+    public function show($id)
+    {
+        $insures = config('insures');
+        $insures = collect($insures)->firstWhere('id', $id);
+        return view('user.getinsured', compact('insures'));
+    }
+
+    
 }

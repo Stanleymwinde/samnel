@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,10 @@ Route::get('/contact', [UserController::class, 'contact'])->name('contact');
 Route::get('/general', [UserController::class, 'general'])->name('general');
 Route::get('/life', [UserController::class, 'life'])->name('life');
 Route::get('/health', [UserController::class, 'health'])->name('health');
+
+Route::get('/getinsured/{id}', [UserController::class, 'show'])->name('getinsured');
+
+//send mail
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+Route::post('/insured', [ContactController::class, 'insure'])->name('insured');
+Route::get('/insured', [UserController::class, 'index'])->name('insured');
