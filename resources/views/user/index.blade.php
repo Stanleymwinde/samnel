@@ -53,24 +53,20 @@
     <!-- About End -->
 
     <!-- insurance Start -->
-    <?php
-    $data = config('data');
-    // this will print the type of $datas variable
-    ?>
-
+    
     <div class="container-xxl py-5 background-color">
         <div class="container">
             <div class="text-center mx-auto profession-div">
                 <h1 class="display-6 mb-5">Insurance</h1>
             </div>
             <div class="row g-4">
-                @foreach ($data as $data)
+               
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item rounded">
                             <img class="img-fluid-" src="{{ $data['image'] }}" alt="img"
                                 style="height:200px; width:260px" />
                             <div class="text-center p-4">
-                                <h5>{{ $data['name'] }}</h5>
+                                <h5></h5>
                             </div>
                             <div class="team-text text-center bg-white p-4">
                                 <div class="d-flex justify-content-center">
@@ -79,20 +75,20 @@
                                 </div>
                                 <hr>
                                 <div>
-                                    <p>{{ $data['note1'] }}</p>
+                                    <p></p>
                                 </div>
                                 <hr>
                                 <div>
-                                    <p>{{ $data['info1'] }}</p>
-                                    <p>{{ $data['info2'] }}</p>
-                                    <p>{{ $data['info3'] }}</p>
-                                    <p>{{ $data['info4'] }}</p>
-                                    <p>{{ $data['info5'] }}</p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                @endforeach
+              
             </div>
         </div>
     </div>
@@ -100,7 +96,7 @@
 
     <!-- insurance End -->
 
-    {{-- progress --}}
+  
     <div>
         <div class="container-fluid page-header-view-cong py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
