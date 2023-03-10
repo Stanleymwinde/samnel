@@ -53,41 +53,36 @@
     <!-- About End -->
 
     <!-- insurance Start -->
-    <?php
-    $data = config('data');
-    // this will print the type of $datas variable
-    ?>
-
     <div class="container-xxl py-5 background-color">
         <div class="container">
+            <?php
+            $insuranceData = config('data');
+            ?>
             <div class="text-center mx-auto profession-div">
                 <h1 class="display-6 mb-5">Insurance</h1>
             </div>
             <div class="row g-4">
-                @foreach ($data as $data)
+                @foreach ($insuranceData as $data)
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item rounded">
-                            <img class="img-fluid-" src="{{ $data['image'] }}" alt="img"
-                                style="height:200px; width:260px" />
+                            <img class=" img-fluid-" src="{{ $data['image'] }}" alt=""
+                                style="height:200px ;width: 260px" />
                             <div class="text-center p-4">
                                 <h5>{{ $data['name'] }}</h5>
+
                             </div>
                             <div class="team-text text-center bg-white p-4">
+
                                 <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-outline-primary px-4 py-2 me-3">Get Quote</a>
-                                    <a href="#" class="btn btn-outline-primary px-4 py-2">Learn More</a>
-                                </div>
-                                <hr>
-                                <div>
-                                    <p>{{ $data['note1'] }}</p>
-                                </div>
-                                <hr>
-                                <div>
-                                    <p>{{ $data['info1'] }}</p>
-                                    <p>{{ $data['info2'] }}</p>
-                                    <p>{{ $data['info3'] }}</p>
-                                    <p>{{ $data['info4'] }}</p>
-                                    <p>{{ $data['info5'] }}</p>
+                                    <a href=""class="btn btn-square- btn-light m-1">
+                                        Read More
+                                    </a>
+
+                                    <a href=""class="btn btn-square- btn-light m-1">
+                                        get insured
+                                    </a>
+
+
                                 </div>
                             </div>
                         </div>
@@ -96,7 +91,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- insurance End -->
 
